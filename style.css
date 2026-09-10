@@ -1,0 +1,30 @@
+body{
+
+    background-image: url();
+}
+
+.main-t{
+    background-image: url();
+    font-family: MV BOLI;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.d{
+    width: 20%;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+.day{
+    font-family: MV BOLI;
+    
+}
+
+#input{
+    width: 100%;
+}
