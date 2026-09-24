@@ -21,6 +21,11 @@ btns.forEach(btn => {
         const option=card.querySelector('.priority');
         const prio=option.value;
         
+        const sound=new Audio('clip.mp3');
+        sound.currentTime=0;
+        sound.play();
+
+
         if (text!=''){
             const li= document.createElement('li');
             li.textContent=text;
