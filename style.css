@@ -1,29 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 * {
     padding: 0;
     box-sizing: border-box;
     margin: 0;
 }
 body{
-    background-image: url('imgs/img1.jpg');
+    background-image: url('img1.png');
+    background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: 70% auto;
     background-size: cover;
     background-position: center;
+    min-height: 100vh;
 }
 
 header {
     width: 100%;
-    background-color: rgba(147, 88, 88, 0.763);
+    height: 130px;
+    background-color: #a0756e7d;
     text-align: center;
     padding: 20px 0;
 }
 
 .added li{
+    display: flex;
+    align-items: center;
+    justify-content: left;
     position: relative;
-    padding-right:25px;
     list-style: none;
-    margin: 4px 0;
+    padding: 6px 8px;
+    gap: 10px;
+    background-color: rgba(111, 196, 249, 0.49);
+    border-radius: 4px;
     
 }
+
+.added li + li{
+    margin-top: 7px;
+}
+
 
 .delete-btn{
     display: none;
@@ -54,24 +70,25 @@ main {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    font-family: 'MV Boli', cursive, sans-serif;
-    width: 135px;
-    height: 90px;
-    background: linear-gradient(to right, #bf953f, #f2e983, #b38728, #fbf5b7, #aa771c);
-    -webkit-background-clip: text;
-    background-clip: text; 
-    -webkit-text-fill-color: transparent;
-    color:transparent;
-    font-size: 35px;
-    transition: background-position 0.3s ease, transform 0.2s ease;
+    font-family: Cormorant Garamond;
+    height: 75px;
+    text-transform: uppercase;
+    /* background: linear-gradient(to right, #bf953f, #f2e983, #b38728, #fbf5b7, #aa771c);
+    -webkit-background-clip: text; */
+    /* background-clip: text; 
+    -webkit-text-fill-color: transparent; */
+    color: #7E3C1A;
+    font-size: 60px;
+    /* transition: background-position 0.3s ease, transform 0.2s ease; */
     background-size: 200% 200%;
-    text-shadow: #fc0 0.5px 0 15px;
+    /* text-shadow: #fc0 0.5px 0 15px; */
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    
 }
 
 .d {
@@ -79,36 +96,52 @@ main {
     box-sizing: border-box;
     min-width: 0;
     display: flex;
+    padding: 13px;
+    border-radius: 15px;
+    border: solid 0.5px rgba(255, 255, 255, 0.715);
     flex-direction: column;
-    gap: 8px;
+    gap: 2px;
+    background-color: rgba(248, 249, 249, 0.642);
 }
 
 .d textarea {
     width: 100%;
     max-width: 100%;
+    height: 60px;
+    resize: none;
     box-sizing: border-box;
     resize: vertical;
+    border: solid 1px #a0756ee6;
+    border-radius: 7px;
+    padding: 3px;
+    font-family: Montserrat;
+    font-size: 11px;
+    box-shadow: inset 2px 4px 31px 3px rgba(115,69,69,0.25);
 }
 
 .day {
-    font-family: 'MV Boli', cursive, sans-serif;
-    color: #e8f951;
-    -webkit-text-stroke: 0.5px rgb(142, 43, 43);
-    word-break: break-word;
+    font-family: Montserrat;
+    color: #7E3C1A;
+    font-weight:600;
+    /* -webkit-text-stroke: 0.5px rgb(142, 43, 43);
+    word-break: break-word; */
 }
 
 .btn-add {
-    width: 50px;
+    width: 57px;
     height: 25px;
     border: none;
-    border-radius: 8px;
-    background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+    border-radius: 12px;
+    background: linear-gradient(to right, #c98c52, #efe471, #b38728, #f7ed84, #b2844c);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
+    margin-top: 3px;
+    margin-right: 3px;
     font-size: 0.8em;
-    color: rgb(121, 103, 3);
+    font-weight: 300;
+    color: rgb(166, 120, 56);
     font-weight: 600;
     cursor: pointer;
     position: relative;
@@ -117,6 +150,7 @@ main {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.144);
     background-size: 200% 200%;
 }
+
 
 .logoIcon path {
     fill: rgb(121, 103, 3);
@@ -127,7 +161,6 @@ main {
     background-position: right center;
 }
 
-
 .priority{
     display: none;
     width: 70%;
@@ -136,16 +169,17 @@ main {
     color: rgb(121, 103, 3);
     font-weight: 500;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.248);
-    
+    margin: 5px;
 }
 
 .added{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgba(111, 196, 249, 0.49);
+    display: block;
+    /* flex-direction: column; */
+    /* background-color: rgba(111, 196, 249, 0.49); */
     margin: 3px;
+    padding: 6px;
     border-radius: 3px;
-    width:fit-content;
+    /* gap: 20px; */
 }
 
 .item::before{
@@ -179,4 +213,20 @@ main {
     content: "!";
     color: red;
     font-weight: bold;
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-right: 20px;
+    justify-content: flex-end;
+    color: rgb(205, 115, 60);
+    font-weight: bold;
+    font-size: 30px;
+}
+.date{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-style: italic;
 }
