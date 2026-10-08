@@ -179,8 +179,8 @@ main {
     margin: 3px;
     padding: 6px;
     border-radius: 3px;
-    /* gap: 20px; */
 }
+
 
 .item::before {
     display: inline;
