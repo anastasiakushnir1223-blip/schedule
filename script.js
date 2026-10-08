@@ -65,11 +65,11 @@ document.querySelector('.cards').addEventListener('click', (event) => {
     }
 });
 
-const back=document.querySelector('.back');
-const forward=document.querySelector('.forward');
-back.addEventListener('click',()=>{
+// const back=document.querySelector('.back');
+// const forward=document.querySelector('.forward');
+// back.addEventListener('click',()=>{
 
-});
-back.addEventListener('click',()=>{
+// });
+// back.addEventListener('click',()=>{
     
-});
+// });
